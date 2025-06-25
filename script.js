@@ -1,5 +1,6 @@
-document.querySelector("form").addEventListener("submit", function(e) {
+document.querySelector(".contact-form").addEventListener("submit", function (e) {
   e.preventDefault();
-  alert("Thanks for contacting Moraya Food Plaza! We'll get back to you soon.");
+  alert("Thanks for reaching out to Moraya Food Plaza! We'll contact you soon.");
   this.reset();
 });
+
