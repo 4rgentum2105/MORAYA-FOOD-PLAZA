@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Moraya Food Plaza</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header>
-    <div class="container">
-      <h1>Moraya Food Plaza</h1>
+    <div class="nav-container">
+      <h1 class="logo">Moraya <span>Food Plaza</span></h1>
       <nav>
-        <ul>
+        <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#about">About</a></li>
@@ -23,58 +24,62 @@
   </header>
 
   <section id="home" class="hero">
-    <div class="container">
-      <h2>Delicious Food, Fast Service</h2>
-      <p>Welcome to Moraya Food Plaza – Taste the tradition!</p>
-      <a href="#menu" class="btn">Explore Menu</a>
+    <div class="hero-content">
+      <h2>Flavors That Feel Like Home</h2>
+      <p>Enjoy traditional Maharashtrian and Indian dishes with a modern twist.</p>
+      <a href="#menu" class="btn-primary">View Menu</a>
     </div>
   </section>
 
   <section id="menu" class="menu-section">
-    <div class="container">
-      <h2>Our Menu</h2>
-      <div class="menu-items">
-        <div class="item">
+    <h2 class="section-title">Our Signature Dishes</h2>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?paneer,tikka" alt="Paneer Tikka">
+        <div class="card-content">
           <h3>Paneer Tikka</h3>
-          <p>Grilled cottage cheese cubes with spicy marinade.</p>
+          <p>Marinated cottage cheese grilled to perfection with Indian spices.</p>
         </div>
-        <div class="item">
+      </div>
+      <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?veg,thali" alt="Veg Thali">
+        <div class="card-content">
           <h3>Veg Thali</h3>
-          <p>Perfect blend of tradition with rice, roti, sabzi & dessert.</p>
+          <p>A wholesome platter with dal, rice, vegetables, chapati & dessert.</p>
         </div>
-        <div class="item">
+      </div>
+      <div class="menu-card">
+        <img src="https://source.unsplash.com/400x300/?misal,pav" alt="Misal Pav">
+        <div class="card-content">
           <h3>Maharashtrian Misal</h3>
-          <p>Spicy lentils topped with farsan and served with pav.</p>
+          <p>A spicy delight served with farsan and buttered pav.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>Founded in 2023, Moraya Food Plaza serves authentic Indian and Maharashtrian cuisine. With passion and precision, we bring taste that feels like home.</p>
+  <section id="about" class="about-section">
+    <h2 class="section-title">Who We Are</h2>
+    <div class="about-content">
+      <p>Moraya Food Plaza has been serving authentic flavors since 2023. We blend local ingredients with a touch of love to bring out the best of Indian culinary tradition. Join us for a taste experience you won’t forget.</p>
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Get in Touch</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
   </section>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Moraya Food Plaza | All rights reserved.</p>
-    </div>
+    <p>&copy; 2025 Moraya Food Plaza. Designed with ❤️</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
