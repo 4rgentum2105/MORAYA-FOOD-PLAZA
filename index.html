@@ -14,22 +14,11 @@
       <h1 class="logo">Moraya <span>Food Plaza</span></h1>
       <nav>
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
           <li><a href="#menu">Menu</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
-
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h2>Flavors That Feel Like Home</h2>
-      <p>Enjoy traditional Maharashtrian and Indian dishes with a modern twist.</p>
-      <a href="#menu" class="btn-primary">View Menu</a>
-    </div>
-  </section>
 
   <section id="menu" class="menu-section">
     <h2 class="section-title">Our Signature Dishes</h2>
@@ -38,7 +27,8 @@
         <img src="https://source.unsplash.com/400x300/?paneer,tikka" alt="Paneer Tikka">
         <div class="card-content">
           <h3>Paneer Tikka</h3>
-          <p>Marinated cottage cheese grilled to perfection with Indian spices.</p>
+          <p>Marinated cottage cheese grilled to perfection.</p>
+          <button class="add-to-cart" data-name="Paneer Tikka" data-price="180">Add to Cart - ₹180</button>
         </div>
       </div>
       <div class="menu-card">
@@ -46,40 +36,38 @@
         <div class="card-content">
           <h3>Veg Thali</h3>
           <p>A wholesome platter with dal, rice, vegetables, chapati & dessert.</p>
+          <button class="add-to-cart" data-name="Veg Thali" data-price="220">Add to Cart - ₹220</button>
         </div>
       </div>
       <div class="menu-card">
         <img src="https://source.unsplash.com/400x300/?misal,pav" alt="Misal Pav">
         <div class="card-content">
-          <h3>Maharashtrian Misal</h3>
+          <h3>Misal Pav</h3>
           <p>A spicy delight served with farsan and buttered pav.</p>
+          <button class="add-to-cart" data-name="Misal Pav" data-price="120">Add to Cart - ₹120</button>
         </div>
       </div>
     </div>
-  </section>
-
-  <section id="about" class="about-section">
-    <h2 class="section-title">Who We Are</h2>
-    <div class="about-content">
-      <p>Moraya Food Plaza has been serving authentic flavors since 2023. We blend local ingredients with a touch of love to bring out the best of Indian culinary tradition. Join us for a taste experience you won’t forget.</p>
-    </div>
-  </section>
-
-  <section id="contact" class="contact-section">
-    <h2 class="section-title">Get in Touch</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Full Name" required />
-      <input type="email" placeholder="Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn-primary">Send Message</button>
-    </form>
   </section>
 
   <footer>
     <p>&copy; 2025 Moraya Food Plaza. Designed with ❤️</p>
   </footer>
 
+  <!-- Cart -->
+  <div class="cart" id="cart">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="close-cart">×</button>
+    </div>
+    <ul id="cart-items"></ul>
+    <div class="cart-footer">
+      <p>Total: ₹<span id="cart-total">0</span></p>
+      <button id="checkout">Checkout</button>
+    </div>
+  </div>
+  <button id="open-cart">🛒</button>
+
   <script src="script.js"></script>
 </body>
 </html>
-
